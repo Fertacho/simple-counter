@@ -9,8 +9,8 @@ function SimpleCounter(props) {
 				<i className="far fa-clock"></i>
 			</diV>
 			<div className="Cmil">{props.cienmil}</div>
-			<div className="Dmil">{props.diesnmil}</div>
-			<div className="Umil">{props.unnmil}</div>
+			<div className="Dmil">{props.diesmil}</div>
+			<div className="Umil">{props.unmil}</div>
 			<div className="centena">{props.cien}</div>
 			<div className="decena">{props.dies}</div>
 			<div className="Unidad">{props.uno}</div>
@@ -20,7 +20,7 @@ function SimpleCounter(props) {
 
 SimpleCounter.propTypes = {
 	cienmil: propTypes.number,
-	diesnmil: propTypes.number,
+	diesmil: propTypes.number,
 	unmil: propTypes.number,
 	cien: propTypes.number,
 	dies: propTypes.number,
