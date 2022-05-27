@@ -8,14 +8,14 @@ const Home = () => {
 	return (
 		<div className="SecCounter">
 			<diV className="clock">
-				<i className="fa-light fa-clock"></i>
+				<i className="far fa-clock"></i>
 			</diV>
-			<div className="Cmil"></div>
-			<div className="Dmil"></div>
-			<div className="Umil"></div>
-			<div className="centena"></div>
-			<div className="decena"></div>
-			<div className="Unidad"></div>
+			<div className="Cmil">0</div>
+			<div className="Dmil">0</div>
+			<div className="Umil">0</div>
+			<div className="centena">0</div>
+			<div className="decena">0</div>
+			<div className="Unidad">0</div>
 		</div>
 	);
 };
