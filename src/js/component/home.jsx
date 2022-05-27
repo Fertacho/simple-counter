@@ -8,12 +8,12 @@ function SimpleCounter(props) {
 			<diV className="clock">
 				<i className="far fa-clock"></i>
 			</diV>
-			<div className="Cmil">{props.cienmil}</div>
-			<div className="Dmil">{props.diesmil}</div>
-			<div className="Umil">{props.unmil}</div>
-			<div className="centena">{props.cien}</div>
-			<div className="decena">{props.dies}</div>
-			<div className="Unidad">{props.uno}</div>
+			<div className="Cmil">{props.cienmil % 10}</div>
+			<div className="Dmil">{props.diesmil % 10}</div>
+			<div className="Umil">{props.unmil % 10}</div>
+			<div className="centena">{props.cien % 10}</div>
+			<div className="decena">{props.dies % 10}</div>
+			<div className="Unidad">{props.uno % 10}</div>
 		</div>
 	);
 }
