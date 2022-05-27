@@ -1,23 +1,29 @@
+import propTypes from "prop-types";
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 //create your first component
-const Home = () => {
+function SimpleCounter(props) {
 	return (
 		<div className="SecCounter">
 			<diV className="clock">
 				<i className="far fa-clock"></i>
 			</diV>
-			<div className="Cmil">0</div>
-			<div className="Dmil">0</div>
-			<div className="Umil">0</div>
-			<div className="centena">0</div>
-			<div className="decena">0</div>
-			<div className="Unidad">0</div>
+			<div className="Cmil">{props.cienmil}</div>
+			<div className="Dmil">{props.diesnmil}</div>
+			<div className="Umil">{props.unnmil}</div>
+			<div className="centena">{props.cien}</div>
+			<div className="decena">{props.dies}</div>
+			<div className="Unidad">{props.uno}</div>
 		</div>
 	);
-};
+}
 
-export default Home;
+SimpleCounter.propTypes = {
+	cienmil: propTypes.number,
+	diesnmil: propTypes.number,
+	unmil: propTypes.number,
+	cien: propTypes.number,
+	dies: propTypes.number,
+	uno: propTypes.number,
+};
+export default SimpleCounter;
